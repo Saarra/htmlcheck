@@ -16,166 +16,163 @@ In this checkpoint, you’re instructed to:
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio || Sarra FATNASSI</title>
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Start herader  -->
     <header>
-      <nav class="top-nav">
+      <nav id="top-nav">
         <div class="container">
-          <div class="logo-gomycode f--left">
-            <a href="#"><img src="img/logogomycode.PNG" alt="" srcset="" /> </a>
+          <div class="logo-wrapper f-left">
+            <a href="#" class="logo"><img src="img/logogomycode.PNG" alt="" srcset="" /></a>
           </div>
-          <div class="navbar">
-            <ul class="navbar-list f--right">
-              <li class="active">
-                <a href="#about-me" class="link-item">About</a>
-              </li>
-              <li><a href="#my-work" class="link-item">Work</a></li>
-              <li><a href="#resume" class="link-item">Resume</a></li>
+          <div class="navbar-wrapper f-right">
+            <ul class="navbar-list">
+              <li class="active"><a href="#" class="link-item">About</a></li>
+              <li><a href="#services" class="link-item">Services</a></li>
+              <li><a href="#blog" class="link-item">Education</a></li>
               <li><a href="#contact" class="link-item">Contact us</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <!-- End herader  -->
-    <section id="about-me">
-      <div class="about-cover">
-        <div class="about-content-box text-center">
-          <h4 class="hello">Welcome To My Portfolio !</h4>
-          <h1 class="post">I'm Full-Stack Developer</h1>
-          <p class="desc"></p>
-          <div class="cv-btn">
-            <a href="#" class="btn btn-pink">Download CV</a>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-pic f-left">
+          <img src="img/sarra.jpg" />
+        </div>
+        <div class="about-content f-right">
+          <h4 class="section-title">About me</h4>
+          <h4 class="about-subtitle">Hello! <span>I'm Sarra FATNASSI</span></h4>
+
+          <div class="about-desc">
+            <p class="desc-top">
+              WEB DEVELOPER
+            </p>
+            <p class="desc-bottom">
+              OFFICE COMPUTER TRAINER <br>
+              TUNISIAN SCOUT LEADER
+            </p>
+          </div>
+          <div class="about-btns">
+            <a href="#" class="btn btn-red">Download cv</a>
+            <a href="#" class="btn btn-white">More details</a>
           </div>
         </div>
+        <div class="clear-fix"></div>
       </div>
     </section>
-	<br>
-    <section class="about">
+
+    <section id="services" class="section text-center white-smoke-color">
       <div class="container">
-        <div class="my-photo">
-          <img src="img/sarra.jpg" alt="" width="500px" height="500px" />
+        <div class="section-heading text-center">
+          <h4 class="section-title">Our Services</h4>
+          <p class="section-subtitle">
+            I am basically a developer I create websites, 
+            and I am good at marketing I work in community management
+          </p>
         </div>
-      </div>
-      <div class="about-content">
-        <h1 class="about-title" style="color: darkblue;">About Me</h4>
-        <h4 class="about-subtitle">Hi ! <span> I'm Sarra. </span></h4>
-      </div>
-      <div class="about-description">
-        <p class="description-top">
-          I'm a fresh graduate in computer technology , specialized in
-          information system development. <br />
-          I was very active at university. I founded an MCNCOM “The Musketeers
-          Clubs for Networking and Communication” club to improve the digital
-          and entrepreneurial skills of students. <br />
-          I was also a member at Google Club . Many projects have been applied
-          at our university. <br />
-          I'm ,also, the leader of the Tunisian Scouts. I like to participate in
-          social acts and help young people to develop their skills and have
-          self_ confidence because it's important. <br />
-          I am currently looking for an opportunity to integrate into the
-          professional life in order to gain experience in the IT field. <br />
-        </p>
+        <div class="services-wrapper">
+          <div class="services-item">
+            <i class="fa fa-file-code-o icon"></i>
+            <h4 class="item-title">Create Web Site</h4>
+            <p class="item-desc">
+              I was among the development team of the e-commerce solution site part of the font-end
+            </p>
+            <a href="https://siyoutechnology.com/#/home">Page Home SiYouTechnology</a>
+          </div>
+          <div class="services-item">
+            <i class="fa fa-id-card-o icon"></i>
+            <h4 class="item-title">Create CV</h4>
+            <p class="item-desc">
+              I created several professional CV designs
+            </p>
+          </div>
+          <div class="services-item">
+            <i class="fa fa-image icon"></i>
+            <h4 class="item-title">Community Manager</h4>
+            <p class="item-desc">
+              I was a community manager at a travel agency
+            </p>
+            <a href="https://www.facebook.com/KikaTours2021">Kika Tours</a>
+          </div>
+        </div>
+        <div class="clear-fix"></div>
       </div>
     </section>
-	<h1 style="color: darkblue;">Works Experiences</h1>
-    <section id="my-work">
-      <table border="1px">
-        <th>Date</th>
-        <th>Post</th>
-        <th>Description</th>
-        <tr>
-          <td>01.02-2018</td>
-          <td>TUNISIE TELECOM - Internship</td>
-          <td>
-            Observation of the urban telephone network installation Repair of
-            customer disturbances in the field Management of customer telephone
-            complaints
-          </td>
-        </tr>
-        <tr>
-          <td>01.02-2019</td>
-          <td>TRUST IT - Web Devoloper Internship</td>
-          <td>
-            Customer management application development Back-end « MongoDB –
-            NodeJs - Model MVC - SCRUM »
-          </td>
-        </tr>
-        <tr>
-          <td>02.06-2020</td>
-          <td>LA PYRAMIDE INNOVANTE - Web Devoloper Internship</td>
-          <td>
-            Design and Development of an Application for the management of a
-            private vocational training center Management of learners, training,
-            CVs « Angular 9 - Laravel 7 - API REST - SQL - SCRUM »
-          </td>
-        </tr>
-        <tr>
-          <td>07.12-2020</td>
-          <td>LA PYRAMIDE INNOVANTE - Office computer trainer</td>
-          <td>
-            Temporary trainer in office automation for caregiver, medical
-            assistants and health care workers profiles pharmaceutical depot.
-          </td>
-        </tr>
-        <tr>
-          <td>01.02-2021</td>
-          <td>SIYOU TECHNOLOHY - Front End Developer</td>
-          <td>Développement de page home de site SIYOU Technologie</td>
-        </tr>
-        <tr>
-          <td>01..03-2021</td>
-          <td>Kika Tours - Communty Manager</td>
-          <td>
-            The role of a community manager is to act as the bridge between a
-            brand and the community it is aiming to create (i.e. a loyal
-            audience or group of core consumers connected by a similar
-            interest). They should be the brand’s ambassador, engaging with
-            potential customers and building relationships with existing ones.
-            They are also focused on gauging sentiment around the brand, using
-            social listening tools in order to monitor feedback and engagement.
-          </td>
-        </tr>
-      </table>
-    </section>
-	<h1 style="color: darkblue;">Educations</h1>
-    <section id="#resume">
-      <table border="1px">
-        <th>Date</th>
-        <th>Post</th>
-        <th>Description</th>
-        <tr>
-          <td>2017 - 2020</td>
-          <td>Licence Degree</td>
-          <td>
-            Applied Bachelor of Computer Technology <br />
-            HIGHER INSTITUTE OF TECHNOLOGICAL STUDIES OF BIZERTE
-          </td>
-        </tr>
-        <tr>
-          <td>2016 - 2017</td>
-          <td>Bachelor's Degree</td>
-          <td>Mathematics Bachelor</td>
-        </tr>
-      </table>
-    </section>
-    <section id="contact">
+    <section id="blog" class="section">
       <div class="container">
-        <div class="section-heading">
-          <h1 class="section-title"  style="color: darkblue;">Contact Us</h1>
-          <p class="section-subtitle">Thanks For Reading</p>
+        <div class="section-heading text-center">
+          <h4 class="section-title">My Education </h4>
+          <p class="section-subtitle">
+            I'm a fresh graduate in computer technology, specialized in information system development. <br>
+            I was very active at university. <br>
+            I founded an MCNCOM “The Musketeers Clubs for Networking and Communication” club to improve the digital and entrepreneurial skills of students. <br>
+            I was also a member at Google Club . Many projects have been applied at our university. <br>
+          </p>
+        </div>
+        <div class="blog-wrapper">
+          <div class="blog f-left">
+            <div class="blog-img">
+              <img src="images/blog/1.jpg" alt="" />
+            </div>
+            <div class="blog-content">
+              <h4 class="title">The Full-Stack JavaScript Bootcamp</h4>
+              <p class="desc">
+                Go My Code
+              </p>
+              <a href="#" class="btn btn-red"> Read More</a>
+            </div>
+          </div>
+          <div class="blog f-left">
+            <div class="blog-img">
+              <img src="images/blog/2.jpg" alt="" />
+            </div>
+            <div class="blog-content">
+              <h4 class="title">Licence Degree</h4>
+              <p class="desc">
+                Applied Bachelor of Computer Technology
+                <b>HIGHER INSTITUTE OF TECHNOLOGICAL STUDIES OF BIZERTE</b>
+              </p>
+              <a href="https://drive.google.com/file/d/18i5kvBsTFMzTb_366faGOiVmpJNqcQgY/view?usp=sharing" class="btn btn-red"> Read More</a>
+            </div>
+          </div>
+          <div class="blog f-left">
+            <div class="blog-img">
+              <img src="images/blog/3.jpg" alt="" />
+            </div>
+            <div class="blog-content">
+              <h4 class="title">Bachelor's Degree.</h4>
+              <p class="desc">
+                Mathematics Bachelor
+              </p>
+              <a href="https://drive.google.com/file/d/1UcWJ_9mbiomcCtDVFmaCi4u6Bt-o09sa/view?usp=sharing" class="btn btn-red">my certificate </a>
+            </div>
+          </div>
+        </div>
+        <div class="clear-fix"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section white-smoke-color">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h4 class="section-title">Contact Us</h4>
         </div>
         <div class="contact-content">
           <div class="message f-left">
             <h4 class="title">Mail Us</h4>
             <form action="post">
-              <div class="name">
+              <div class="input-name f-left">
                 <input type="text" name="" placeholder="Name" />
               </div>
-              <div class="email">
+              <div class="input-mail f-left">
                 <input type="email" name="" placeholder="E-mail" />
               </div>
+              <div class="clear-fix"></div>
               <div class="input-subject">
                 <input type="text" name="" placeholder="Subject" />
               </div>
@@ -187,12 +184,12 @@ In this checkpoint, you’re instructed to:
                   placeholder="Message Here..."
                 ></textarea>
               </div>
-              <button type="submit" name="submit" class="btn">Submit</button>
+              <button type="submit" name="submit" class="btn btn-red">
+                Submit
+              </button>
             </form>
           </div>
           <div class="contact-info f-left">
-            <h4 class="title">Contact me</h4>
-            <p class="contact-desc"></p>
             <ul class="contact-details">
               <li>
                 <div class="contact-icon f-left">
@@ -200,8 +197,9 @@ In this checkpoint, you’re instructed to:
                 </div>
                 <div class="contact-text">
                   <h4 class="sub-title">Location</h4>
-                  <p class="desc">Tunis, Ariana.</p>
+                  <p class="desc">Ariana, Raoued</p>
                 </div>
+                <div class="clear-fix"></div>
               </li>
               <li>
                 <div class="contact-icon f-left">
@@ -211,6 +209,7 @@ In this checkpoint, you’re instructed to:
                   <h4 class="sub-title">Call Me</h4>
                   <p class="desc">+216 50 644 410</p>
                 </div>
+                <div class="clear-fix"></div>
               </li>
               <li>
                 <div class="contact-icon f-left">
@@ -220,19 +219,22 @@ In this checkpoint, you’re instructed to:
                   <h4 class="sub-title">E-mail</h4>
                   <p class="desc">sarrafatnassi98@gmail.com</p>
                 </div>
+                <div class="clear-fix"></div>
               </li>
             </ul>
           </div>
         </div>
+        <div class="clear-fix"></div>
       </div>
     </section>
     <footer id="footer">
       <div class="footer-bottom text-center">
         <span class="copyright"
           >Copyright &copy; 2021, All right reserved. Designed
-          <i class="fa fa-heart"></i> by Sarra FATNASSI
-        </span>
+          <i class="fa fa-heart"></i> by Sarra FATNASSI</span
+        >
       </div>
+      <div class="clear-fix"></div>
     </footer>
   </body>
 </html>

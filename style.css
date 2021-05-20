@@ -1,0 +1,352 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+
+/* all CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 18px;
+  overflow-x: hidden;
+  font-weight: normal;
+}
+
+ul,
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* responsive css */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.f--left {
+  float: left;
+}
+
+.f--right {
+  float: right;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* Start Header CSS */
+.top-nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid palevioletred;
+}
+
+.top-nav .logo-gomycode {
+  margin: 15px;
+}
+
+.navbar-list li .link-item {
+  color: darkblue;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.top-nav li.active a {
+  color: palevioletred;
+}
+
+/* End Header CSS */
+
+/* About CSS */
+.about-me {
+  position: relative;
+}
+
+.about-me .about-cover {
+  /* background-image: url(img/code.jpg); */
+  /* background-size: cover;
+	background-attachment: fixed;
+	background-position: center center; */
+  background-color: darkblue;
+  height: 100vh;
+  /* opacity: 0.5; */
+}
+
+.about-me .about-cover .about-content-box {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-40%);
+  color: #fff;
+}
+
+.about-me .about-cover .about-content-box .hello {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.about-me .about-cover .about-content-box .post {
+  margin: 20px 0 20px 0;
+  font-size: 35px;
+}
+
+.about-me .about-cover .about-content-box .desc {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.about-me .about-cover .about-content-box .cv-btn {
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-pink {
+  background-color: pink;
+  color: darkblue;
+}
+
+.btn-pink:hover {
+  color: rgb(128, 3, 72);
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.my-photo {
+  width: 37%;
+  padding: 5px;
+  border: 1px solid pink;
+}
+
+.my-photo img {
+  display: block;
+  max-width: 100%;
+}
+
+.about-content {
+  width: 60%;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.about-content h4 span {
+  color: darkblue;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0 0 0;
+}
+
+/* Contact CSS */
+.white-smoke-color {
+  background-color: #f7f7f7;
+}
+
+/* .clear-fix{
+	content: '';
+	display: table;
+	clear: both;
+}
+   */
+
+#contact .contact-content .message,
+#contact .contact-content .contact-info {
+  width: calc(100% / 2 - 20px);
+}
+
+#contact .contact-content .message {
+  margin: 0 40px 40px 0;
+}
+
+#contact .contact-content .title {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+#contact .contact-content form input {
+  width: 100%;
+  border-radius: 3px;
+}
+
+input,
+textarea {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 15px 20px;
+}
+
+#contact .contact-content form .input-name,
+#contact .contact-content form .input-mail {
+  width: calc(100% / 2 - 10px);
+  margin: 0 0 20px 0;
+}
+
+#contact .contact-content form .input-name {
+  margin-right: 20px;
+}
+
+#contact .contact-content form .input-textarea {
+  margin: 20px 0 30px 0;
+  width: 100%;
+}
+
+#contact .contact-content form .input-textarea textarea {
+  width: 100%;
+  height: 150%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+#contact .contact-content form [type="submit"] {
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #e65f78;
+}
+
+#contact .contact-content ul.contact-details {
+  margin: 20px 0;
+}
+
+#contact .contact-content ul.contact-details li {
+  display: block;
+  margin: 20px 0 20px 0;
+}
+
+#contact .contact-content ul.contact-details .contact-icon {
+  margin: 0 20px 0 0;
+  width: 60px;
+  height: 60px;
+  line-height: 75px;
+  text-align: center;
+  position: relative;
+}
+
+#contact .contact-content ul.contact-details .contact-icon i {
+  font-size: 32px;
+  margin-top: 14px;
+  color: #e65f78;
+}
+
+#contact .contact-content ul.contact-details .contact-text {
+  width: 280px;
+  padding: 10px 0;
+}
+
+#footer {
+  background-color: #222;
+  position: relative;
+}
+
+#footer .footer-bottom {
+  margin: 20px 0 0 0;
+  border-top: 4px solid #292929;
+  padding: 30px 0;
+}
+
+#footer .footer-bottom .copyright {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin: 10px 0 20px 0;
+  line-height: 26px;
+}
+
+#footer .footer-bottom .copyright i {
+  color: #e65f78;
+}
+
+.btn-mouse-wrapper {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.btn-mouse-wrapper .btn-mouse {
+  border: 2px solid #c6c5c7;
+  padding: 20px 15px;
+  border-radius: 50px;
+}
+
+.btn-mouse-wrapper .btn-mouse .btn-wheel {
+  width: 3px;
+  height: 10px;
+  padding: 0;
+  background-color: #c6c5c7;
+  transform: translateY(-10px);
+  animation: updown 2s ease 0.1s infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10px);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0.1;
+  }
+}
